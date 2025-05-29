@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lecture 6</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(45deg, #2e003e, #6a1f77, #9c1aff, #00d4ff); 
+                background-size: 200% 200%;
+                color: white; 
+            }
+            
+            .container {
+                width: 80%;
+                max-width: 1200px;
+                padding: 20px;
+                background-color: rgba(26, 0, 54, 0.7); 
+                border: 3px solid #9c1aff; 
+                border-radius: 8px;
+                box-shadow: 0 0 10px #9c1aff, 0 0 20px #9c1aff, 0 0 40px #ff00ff, 0 0 60px #ff00ff; 
+                margin: 20px auto;
+            }
+            
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="/action_page.php">
+                First name:<br>
+                <input type="text" name="firstname"><br>
+                Last Name:<br>
+                <input type="text" name="lastname"><br><br>
+                
+                
+                <input type="submit" value="submit"><br><br>
+            </form>
+        
+        
+        
+            <form>
+                <input type="radio" name="gender" value="male" checked>Male<br>
+                <input type="radio" name="gender" value="female">Female<br>
+                <input type="radio" name="gender" value="other">Other
+            </form>
+        
+        
+        
+            <form>
+                <input type="checkbox" name="vehicle1" value="Bike">I have a bike<br>
+                <input type="checkbox" name="vehicle2" value="Car">I have a car
+            </form>
+
+            <form>
+                <input type="search" name="Search" value="search"><br><br>
+                <input type="week" name="Enter week" value="week"><br><br>
+                <input type="number" name="Enter number" value="numb"><br><br>
+                <input type="email" name="Enter email" value="mail"><br><br>
+                <input type="autocomplete" name="Complete" value="Auto"><br><br>
+            </form>
+        
+        </div>
+
+    </body>
+</html>

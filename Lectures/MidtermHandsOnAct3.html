@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Data Sheet</title>
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 40px;
+  background-color: #fdfdfd;
+}
+
+.container {
+  max-width: 950px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border: 1px solid #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.title h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.title h3 {
+  margin: 4px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.program-info {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.underline {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  min-width: 150px;
+  height: 1.2em;
+  vertical-align: bottom;
+}
+
+.name-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.name-row > div {
+  width: 24%;
+  border-top: 1px solid #000;
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.section h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px 8px;
+  vertical-align: middle;
+}
+
+.input-line {
+  border: none;
+  border-bottom: 1px solid black;
+  background: none;
+  width: 100%;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.1);
+  margin-right: 5px;
+}
+
+.checkboxes label {
+  display: block;
+  margin: 4px 0;
+}
+
+</style>
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <div class="logo">LOGO</div>
+
+    <div class="title">
+      <h2>SAMPLE UNIVERSITY</h2>
+      <p>ENROLLMENT SYSTEM</p>
+      <h3>PERSONAL DATA SHEET</h3>
+      <p>(Graduate School, Law, Medicine)</p>
+    </div>
+
+    <div class="program-info">
+      <p>Program: <span class="underline"></span></p>
+      <p>Student #: <span class="underline"></span></p>
+    </div>
+  </div>
+
+  <div class="name-row">
+    <div>SURNAME</div>
+    <div>GIVEN NAME</div>
+    <div>MIDDLE NAME</div>
+    <div>AUXILIARY NAME<br><small>(Sr., Jr., I, II, III, etc)</small></div>
+  </div>
+
+  <div class="section">
+    <h4>STUDENT DETAILS:</h4>
+    <table>
+      <tr>
+        <td>City Address:</td>
+        <td colspan="3"><input type="text" class="input-line"></td>
+      </tr>
+      <tr>
+        <td>Zip Code:</td>
+        <td><input type="text" class="input-line"></td>
+        <td>Tel. No.:</td>
+        <td><input type="text" class="input-line"></td>
+      </tr>
+      <tr>
+        <td>Email address:</td>
+        <td colspan="3"><input type="email" class="input-line"></td>
+      </tr>
+      <tr>
+        <td>Home Address:</td>
+        <td colspan="3"><input type="text" class="input-line"></td>
+      </tr>
+      <tr>
+        <td>Zip Code:</td>
+        <td><input type="text" class="input-line"></td>
+        <td>Region:</td>
+        <td><input type="text" class="input-line"></td>
+      </tr>
+      <tr>
+        <td>Birthday:</td>
+        <td><input type="text" class="input-line"></td>
+        <td>Age:</td>
+        <td><input type="text" class="input-line"></td>
+      </tr>
+      <tr>
+        <td>Birthplace:</td>
+        <td><input type="text" class="input-line"></td>
+        <td>Religion:</td>
+        <td><input type="text" class="input-line"></td>
+      </tr>
+      <tr>
+        <td>Citizenship:</td>
+        <td><input type="text" class="input-line"></td>
+        <td>Sex:</td>
+        <td><input type="text" class="input-line"></td>
+      </tr>
+      <tr>
+        <td>If Alien, ACR # (see Registrar):</td>
+        <td colspan="3"><input type="text" class="input-line"></td>
+      </tr>
+    </table>
+
+    <h4>Legal Status:</h4>
+    <div class="checkboxes">
+      <label><input type="checkbox"> Citizen of RP</label>
+      <label><input type="checkbox"> Permanent Resident</label>
+      <label><input type="checkbox"> Person granted permission to enter and remain as a student in RP on a visa for a defined period of time</label>
+      <label><input type="checkbox"> Person granted permission to enter and remain as a child or spouse of a worker on a visa for a defined period of time</label>
+      <label><input type="checkbox"> Other visa</label>
+      <label><input type="checkbox"> Legal status not known</label>
+    </div>
+
+    <h4>Civil Status:</h4>
+    <div class="checkboxes">
+      <label><input type="checkbox"> Single</label>
+      <label><input type="checkbox"> Married</label>
+      <label><input type="checkbox"> Divorced</label>
+      <label><input type="checkbox"> Widowed</label>
+      <label><input type="checkbox"> Separated</label>
+    </div>
+
+    <h4>Working:</h4>
+    <div class="checkboxes">
+      <label><input type="checkbox"> Working</label>
+      <label>If working, Office/Bus. Tel. # <input type="text" class="input-line" style="width: 200px;"></label>
+      <label><input type="checkbox"> Not working</label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h4>FATHER'S INFORMATION:</h4>
+    <table>
+      <tr><td>Surname:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>First Name:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Middle Name:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Auxiliary Name:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Occupation/Employment:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Educational Attainment:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Parent's Address:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Zip Code:</td><td><input type="text" class="input-line"></td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h4>MOTHER'S INFORMATION:</h4>
+    <table>
+      <tr><td>Surname:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>First Name:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Middle Name:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Auxiliary Name:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Occupation/Employment:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Educational Attainment:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Parent's Tel. #:</td><td><input type="text" class="input-line"></td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h4>GUARDIAN'S INFORMATION: <span style="font-weight: normal;">(If Applicable)</span></h4>
+    <table>
+      <tr><td>Surname:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>First Name:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Middle Name:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Auxiliary Name:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Occupation/Employment:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Off./Bus. Tel. #:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Guardian’s Address:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Zip Code:</td><td><input type="text" class="input-line"></td></tr>
+      <tr><td>Tel. #:</td><td><input type="text" class="input-line"></td></tr>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>
